@@ -5,14 +5,14 @@ USE employee_db;
 
 CREATE TABLE department (
     id INT AUTO_INCREMENT,
-    name VARCHAR(30) NOT NULL,
+    name VARCHAR(60),
     PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
     id INT AUTO_INCREMENT,
-    title VARCHAR(30) NOT NULL,
-    salary DECIMAL NOT NULL,
+    title VARCHAR(60),
+    salary DECIMAL,
     department_id INT,
     PRIMARY KEY (id),
     FOREIGN KEY (department_id) REFERENCES department(id)
@@ -26,9 +26,7 @@ CREATE TABLE employee (
     role_id INT,
     manager_id INT,
     PRIMARY KEY (id),
-    FOREIGN KEY (role_id) REFERENCES role(id),
+    FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE CASCADE,
     FOREIGN KEY (manager_id) REFERENCES employee(id)
     ON DELETE CASCADE
 );
-
-CREATE TABLE
