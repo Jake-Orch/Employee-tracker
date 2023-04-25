@@ -13,7 +13,9 @@ This is a SQL database manager, where employers can create and track departments
 ## Installation  
 To install this application, simply clone this repository to your desktop, and run it using prefferably VS Code and Node JS.
 ## Usage  
-Once in the folder on VS Code, open up the terminal and write npm i to initialise the file then node index.js to start the program. Then you can simply browse through the prompts presented to you in the command line using the arrow keys on your keyboard, hit enter on any option you wish to take and either view the table you wish to view or enter the required information for the tasks to be completed.
+Once in the folder on VS Code, open up the terminal and write npm i to initialise the file then node index.js to start the program. Then you can simply browse through the prompts presented to you in the command line using the arrow keys on your keyboard, hit enter on any option you wish to take and either view the table you wish to view or enter the required information for the tasks to be completed. I have a video tutorial linked below on the instructions of how to use the application.
+[Link to video tutorial](https://drive.google.com/file/d/1UqrXrRoTRIlFtz2UlgX4LF9XSYUMy6R7/view?usp=share_link)
+
 ## License  
 N/A
 ## Contributing  
