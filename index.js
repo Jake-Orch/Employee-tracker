@@ -159,16 +159,16 @@ function init() {
                                 });
                             });
                     });
-                })
+                });
 
-            } else if (d.main === 'Update An Employee') {
+            } else if (d.main === 'Update Employee Role') {
                 db.query(strings.ViewE, (err, res) => {
                     const empName = res.map((employee) => {
                         return { name: employee.first_name + " " + employee.last_name, value: employee.id }
                     })
-                    db.query(strings.AddR, (err, res) => {
+                    db.query(strings.ViewR, (err, res) => {
                         const newRole = res.map((role) => {
-                            return { name: role.title, value: role.id }
+                            return { name: role.title, value: role.id  }
                         })
                         inquirer.prompt([
                             {
@@ -193,10 +193,10 @@ function init() {
                                 }
                             })
                             init()
-                        })
-                    })
-                })
-            }
+                        });
+                    });
+                });
+            };
         });
 };
 
